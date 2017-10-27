@@ -1,0 +1,5 @@
+<%= form_for @pokemon do |f| %>
+  <%= f.text_field :name %>
+  <%= button_to "Submit", createPokemon_path(), :class => "button medium", :method => :post %>
+<% end %>
+
